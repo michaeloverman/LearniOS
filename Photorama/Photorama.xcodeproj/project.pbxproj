@@ -18,6 +18,7 @@
 		F124654022FFCB0D0022D700 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124653F22FFCB0D0022D700 /* PhotoStore.swift */; };
 		F124654222FFD0C70022D700 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124654122FFD0C70022D700 /* Photo.swift */; };
 		F1246544230043750022D700 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1246543230043750022D700 /* PhotoDataSource.swift */; };
+		F1246546230050750022D700 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1246545230050750022D700 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F124653F22FFCB0D0022D700 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		F124654122FFD0C70022D700 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		F1246543230043750022D700 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		F1246545230050750022D700 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				F124654122FFD0C70022D700 /* Photo.swift */,
 				F124650D22FFAEDA0022D700 /* AppDelegate.swift */,
 				F124651122FFAEDA0022D700 /* Main.storyboard */,
+				F1246545230050750022D700 /* PhotoCollectionViewCell.swift */,
 				F1246543230043750022D700 /* PhotoDataSource.swift */,
 				F124651422FFAEDB0022D700 /* Assets.xcassets */,
 				F124651622FFAEDB0022D700 /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 				F124653C22FFAEF70022D700 /* PhotosViewController.swift in Sources */,
 				F124654022FFCB0D0022D700 /* PhotoStore.swift in Sources */,
 				F1246544230043750022D700 /* PhotoDataSource.swift in Sources */,
+				F1246546230050750022D700 /* PhotoCollectionViewCell.swift in Sources */,
 				F124650E22FFAEDA0022D700 /* AppDelegate.swift in Sources */,
 				F124654222FFD0C70022D700 /* Photo.swift in Sources */,
 			);
