@@ -57,7 +57,7 @@ struct FlickrAPI {
     }
     
     static var interestingPhotosURL: URL {
-        return flickrURL(method: .recentPhotos, parameters: ["extras": "url_h,date_taken"])
+        return flickrURL(method: .interestingPhotos, parameters: ["extras": "url_h,date_taken"])
     }
     
     static func photos(fromJSON data: Data) -> PhotosResult {
