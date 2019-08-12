@@ -87,15 +87,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOb-ls-E8v">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-wL-aDo">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Tags" id="XP7-bU-zVR"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eOb-ls-E8v" firstAttribute="top" secondItem="2Ux-Q4-IR8" secondAttribute="top" id="7vw-Q5-dqD"/>
-                            <constraint firstItem="2Ux-Q4-IR8" firstAttribute="bottom" secondItem="eOb-ls-E8v" secondAttribute="bottom" id="Pqh-S4-WLX"/>
                             <constraint firstItem="eOb-ls-E8v" firstAttribute="leading" secondItem="2Ux-Q4-IR8" secondAttribute="leading" id="VDv-kY-331"/>
+                            <constraint firstItem="LbJ-wL-aDo" firstAttribute="leading" secondItem="2Ux-Q4-IR8" secondAttribute="leading" id="eve-5L-NwK"/>
                             <constraint firstItem="2Ux-Q4-IR8" firstAttribute="trailing" secondItem="eOb-ls-E8v" secondAttribute="trailing" id="hId-2v-W6c"/>
+                            <constraint firstItem="LbJ-wL-aDo" firstAttribute="trailing" secondItem="2Ux-Q4-IR8" secondAttribute="trailing" id="mjh-MP-m4w"/>
+                            <constraint firstItem="LbJ-wL-aDo" firstAttribute="bottom" secondItem="2Ux-Q4-IR8" secondAttribute="bottom" id="ps6-Xc-1hg"/>
+                            <constraint firstItem="LbJ-wL-aDo" firstAttribute="top" secondItem="eOb-ls-E8v" secondAttribute="bottom" id="rkd-rA-6iD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Ux-Q4-IR8"/>
                     </view>
@@ -105,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHr-XT-yEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1927" y="797"/>
+            <point key="canvasLocation" x="1925.5999999999999" y="796.55172413793105"/>
         </scene>
         <!--Photorama-->
         <scene sceneID="3eb-no-3RF">
