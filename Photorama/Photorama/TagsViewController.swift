@@ -94,7 +94,7 @@ class TagsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let tag = tagDataSource.tags[indexPath.row]
         
-        if let index = selectedIndexPaths.index(of: indexPath) {
+        if let index = selectedIndexPaths.firstIndex(of: indexPath) {
             selectedIndexPaths.remove(at: index)
             photo.removeFromTags(tag)
         } else {
@@ -113,7 +113,7 @@ class TagsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        if selectedIndexPaths.index(of: indexPath) != nil {
+        if selectedIndexPaths.firstIndex(of: indexPath) != nil {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
