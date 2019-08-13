@@ -37,6 +37,9 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C1o-B8-4q4">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                 </imageView>
                                                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="k5H-lx-bHS">
                                                     <rect key="frame" x="35" y="35" width="20" height="20"/>
@@ -101,6 +104,10 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="eOb-ls-E8v" firstAttribute="top" secondItem="2Ux-Q4-IR8" secondAttribute="top" id="7vw-Q5-dqD"/>
                             <constraint firstItem="eOb-ls-E8v" firstAttribute="leading" secondItem="2Ux-Q4-IR8" secondAttribute="leading" id="VDv-kY-331"/>
