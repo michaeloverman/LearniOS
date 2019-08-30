@@ -18,12 +18,15 @@ struct Town {
         }
     }
     var numberOfStoplights: Int
-    init(region: String, population: Int, stoplights: Int) {
+    init?(region: String, population: Int, stoplights: Int) {
+        if population <= 0 {
+            return nil
+        }
         self.region = region
         self.population = population
         numberOfStoplights = stoplights
     }
-    init(population: Int, stoplights: Int) {
+    init?(population: Int, stoplights: Int) {
         self.init(region: "N/A", population: population, stoplights: stoplights)
     }
     enum Size {

@@ -14,7 +14,7 @@ class Monster {
         return "Grrr..."
     }
     var town: Town?
-    var name: String
+    var name: String!
     var victimPool: Int {
         get {
             return town?.population ?? 0
@@ -23,8 +23,12 @@ class Monster {
             town?.population = newVictimPool
         }
     }
-    required init(town: Town?, monsterName: String) {
+    required init?(town: Town?, monsterName: String) {
         self.town = town
+        if monsterName == "" {
+            name = nil
+            return nil
+        }
         name = monsterName
     }
     func terrorizeTown() {
