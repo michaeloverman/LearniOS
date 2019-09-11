@@ -10,6 +10,7 @@
 		F1EE448623274DA30017DC37 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE448523274DA30017DC37 /* main.swift */; };
 		F1EE448D23274DD20017DC37 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE448C23274DD20017DC37 /* Person.swift */; };
 		F1EE448F23274FAE0017DC37 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE448E23274FAE0017DC37 /* Asset.swift */; };
+		F1EE44912328B6B70017DC37 /* Accountant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE44902328B6B70017DC37 /* Accountant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		F1EE448523274DA30017DC37 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F1EE448C23274DD20017DC37 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F1EE448E23274FAE0017DC37 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		F1EE44902328B6B70017DC37 /* Accountant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accountant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				F1EE448523274DA30017DC37 /* main.swift */,
 				F1EE448C23274DD20017DC37 /* Person.swift */,
 				F1EE448E23274FAE0017DC37 /* Asset.swift */,
+				F1EE44902328B6B70017DC37 /* Accountant.swift */,
 			);
 			path = CyclicalAssets;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				F1EE448F23274FAE0017DC37 /* Asset.swift in Sources */,
 				F1EE448D23274DD20017DC37 /* Person.swift in Sources */,
 				F1EE448623274DA30017DC37 /* main.swift in Sources */,
+				F1EE44912328B6B70017DC37 /* Accountant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
