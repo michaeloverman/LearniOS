@@ -14,11 +14,15 @@ class Accountant {
     var netWorthChangedHandler: NetWorthChanged? = nil
     var netWorth: Double = 0.0 {
         didSet {
-            netWorthChangedHandler(netWorth)
+            netWorthChangedHandler?(netWorth)
         }
     }
     
     func gainedNewAsset(asset: Asset) {
         netWorth += asset.value
+    }
+    
+    func removedOldAsset(asset: Asset) {
+        netWorth -= asset.value
     }
 }

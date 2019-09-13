@@ -21,9 +21,9 @@ class Person: CustomStringConvertible {
         self.name = name
         
         accountant.netWorthChangedHandler = {
-            notWorth in
+            [weak self] netWorth in
             
-            self.netWorthDidChange(netWorth)
+            self?.netWorthDidChange(netWorth: netWorth)
             return
         }
     }
@@ -36,6 +36,16 @@ class Person: CustomStringConvertible {
         asset.owner = self
         assets.append(asset)
         accountant.gainedNewAsset(asset: asset)
+    }
+    
+    func rescindOwnershipOf(asset: Asset) {
+        asset.owner = nil
+        for var i = 0; i < assets.count; ++i {
+            if assets[i].equals(asset) {
+                assets.remove(at: i)
+            }
+        }
+        accountant.removedOldAsset(asset: asset)
     }
     
     func netWorthDidChange(netWorth: Double) {
