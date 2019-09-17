@@ -10,11 +10,6 @@ import Cocoa
 
 class Document: NSDocument {
 
-    override init() {
-        super.init()
-        // Add your subclass-specific initialization here.
-    }
-
     override class var autosavesInPlace: Bool {
         return true
     }
@@ -27,9 +22,19 @@ class Document: NSDocument {
     }
 
     override func data(ofType typeName: String) throws -> Data {
-        // Insert code here to write your document to data of the specified type, throwing an error in case of failure.
-        // Alternatively, you could remove this method and override fileWrapper(ofType:), write(to:ofType:), or write(to:ofType:for:originalContentsURL:) instead.
-        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        let windowController = windowControllers[0]
+        let viewController = windowController.contentViewController as! ViewController
+        
+        let contents = viewController.textView.string ?? ""
+        
+        if let data = contents.data(using: String.Encoding.utf8) {
+            return data
+        } else {
+            let userInfo = [
+                NSLocalizedRecoverySuggestionErrorKey: "File cannot bet encoded in UTF-8."
+            ]
+            throw NSError(domain: "com.bignerdranch.VocalTextEdit", code: 0, userInfo: userInfo)
+        }
     }
 
     override func read(from data: Data, ofType typeName: String) throws {
