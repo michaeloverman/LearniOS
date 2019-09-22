@@ -14,6 +14,7 @@
 		F1C7D9D223348E2A00443C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C7D9D023348E2A00443C9A /* LaunchScreen.storyboard */; };
 		F1C7D9D523348E2A00443C9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9D423348E2A00443C9A /* main.m */; };
 		F1C7D9DF23348E2A00443C9A /* ContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9DE23348E2A00443C9A /* ContactsTests.m */; };
+		F1C7D9EB23351DED00443C9A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9EA23351DED00443C9A /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F1C7D9DA23348E2A00443C9A /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C7D9DE23348E2A00443C9A /* ContactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTests.m; sourceTree = "<group>"; };
 		F1C7D9E023348E2A00443C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C7D9E923351DED00443C9A /* Contacts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contacts-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F1C7D9EA23351DED00443C9A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		F1C7D9B923348E2800443C9A = {
 			isa = PBXGroup;
 			children = (
+				F1C7D9EA23351DED00443C9A /* Contact.swift */,
+				F1C7D9E923351DED00443C9A /* Contacts-Bridging-Header.h */,
 				F1C7D9C423348E2800443C9A /* Contacts */,
 				F1C7D9DD23348E2A00443C9A /* ContactsTests */,
 				F1C7D9C323348E2800443C9A /* Products */,
@@ -152,6 +157,7 @@
 				TargetAttributes = {
 					F1C7D9C123348E2800443C9A = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					F1C7D9D923348E2A00443C9A = {
 						CreatedOnToolsVersion = 10.3;
@@ -203,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C7D9EB23351DED00443C9A /* Contact.swift in Sources */,
 				F1C7D9CA23348E2800443C9A /* ContactsViewController.m in Sources */,
 				F1C7D9D523348E2A00443C9A /* main.m in Sources */,
 				F1C7D9C723348E2800443C9A /* AppDelegate.m in Sources */,
@@ -363,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JN3KH5YSL6;
 				INFOPLIST_FILE = Contacts/Info.plist;
@@ -372,6 +380,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.nohands.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contacts-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -380,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JN3KH5YSL6;
 				INFOPLIST_FILE = Contacts/Info.plist;
@@ -389,6 +401,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.nohands.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contacts-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -396,6 +410,7 @@
 		F1C7D9E723348E2A00443C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JN3KH5YSL6;
@@ -415,6 +430,7 @@
 		F1C7D9E823348E2A00443C9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JN3KH5YSL6;
