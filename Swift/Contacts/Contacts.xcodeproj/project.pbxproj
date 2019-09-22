@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F16B9D482337110400BA254E /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B9D472337110400BA254E /* NewContactViewController.swift */; };
 		F1C7D9C723348E2800443C9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9C623348E2800443C9A /* AppDelegate.m */; };
 		F1C7D9CA23348E2800443C9A /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9C923348E2800443C9A /* ContactsViewController.m */; };
 		F1C7D9CD23348E2800443C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C7D9CB23348E2800443C9A /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F16B9D472337110400BA254E /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
 		F1C7D9C223348E2800443C9A /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C7D9C523348E2800443C9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C7D9C623348E2800443C9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				F1C7D9D023348E2A00443C9A /* LaunchScreen.storyboard */,
 				F1C7D9D323348E2A00443C9A /* Info.plist */,
 				F1C7D9D423348E2A00443C9A /* main.m */,
+				F16B9D472337110400BA254E /* NewContactViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C7D9EB23351DED00443C9A /* Contact.swift in Sources */,
+				F16B9D482337110400BA254E /* NewContactViewController.swift in Sources */,
 				F1C7D9CA23348E2800443C9A /* ContactsViewController.m in Sources */,
 				F1C7D9D523348E2A00443C9A /* main.m in Sources */,
 				F1C7D9C723348E2800443C9A /* AppDelegate.m in Sources */,

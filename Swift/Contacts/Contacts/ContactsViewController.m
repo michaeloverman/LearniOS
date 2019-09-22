@@ -23,10 +23,11 @@
 //        NSArray *contactArray = @[@"Johnny Appleseed",
 //                                  @"Paul Bunyan",
 //                                  @"Calamity Jane"];
-        Contact *c1 = [[Contact alloc]initWithContactName:@"Johnny Appleseed"];
-        Contact *c2 = [[Contact alloc]initWithContactName:@"Paul Bunyon"];
-        Contact *c3 = [[Contact alloc]initWithContactName:@"Calamity Jane"];
-        _contacts = [NSMutableArray arrayWithArray:@[c1,c2,c3]];
+//        Contact *c1 = [[Contact alloc]initWithContactName:@"Johnny Appleseed"];
+//        Contact *c2 = [[Contact alloc]initWithContactName:@"Paul Bunyon"];
+//        Contact *c3 = [[Contact alloc]initWithContactName:@"Calamity Jane"];
+//        _contacts = [NSMutableArray arrayWithArray:@[c1,c2,c3]];
+        _contacts = [NSMutableArray array];
     }
     return self;
 }
