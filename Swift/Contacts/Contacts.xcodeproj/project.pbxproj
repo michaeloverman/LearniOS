@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F16B9D482337110400BA254E /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B9D472337110400BA254E /* NewContactViewController.swift */; };
+		F186BB472339717E00209C8E /* DefaultImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F186BB462339717E00209C8E /* DefaultImage.m */; };
 		F1C7D9C723348E2800443C9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9C623348E2800443C9A /* AppDelegate.m */; };
 		F1C7D9CA23348E2800443C9A /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7D9C923348E2800443C9A /* ContactsViewController.m */; };
 		F1C7D9CD23348E2800443C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C7D9CB23348E2800443C9A /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		F16B9D472337110400BA254E /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
+		F186BB452339717E00209C8E /* DefaultImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultImage.h; sourceTree = "<group>"; };
+		F186BB462339717E00209C8E /* DefaultImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultImage.m; sourceTree = "<group>"; };
 		F1C7D9C223348E2800443C9A /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C7D9C523348E2800443C9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1C7D9C623348E2800443C9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				F1C7D9D323348E2A00443C9A /* Info.plist */,
 				F1C7D9D423348E2A00443C9A /* main.m */,
 				F16B9D472337110400BA254E /* NewContactViewController.swift */,
+				F186BB452339717E00209C8E /* DefaultImage.h */,
+				F186BB462339717E00209C8E /* DefaultImage.m */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				F1C7D9CA23348E2800443C9A /* ContactsViewController.m in Sources */,
 				F1C7D9D523348E2A00443C9A /* main.m in Sources */,
 				F1C7D9C723348E2800443C9A /* AppDelegate.m in Sources */,
+				F186BB472339717E00209C8E /* DefaultImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
